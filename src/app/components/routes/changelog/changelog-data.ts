@@ -15,6 +15,12 @@ interface ReleaseVersion extends SNBT {
  */
 export const ChangeLogData: Changelog = {
   Changelog: {
+    "1.9.1": {
+      releaseDate: "September 12, 2026",
+      bugFixes: [
+        "Fixed a bug introduced in Inspect MC 1.9.0 where blocks with multiple states and corresponding map colors only displayed their default state and map color in Minecraft versions before 26.3."
+      ]
+    },
     "1.9.0": {
       releaseDate: "September 12, 2026",
       features: [
