@@ -16,7 +16,7 @@ interface ReleaseVersion extends SNBT {
 export const ChangeLogData: Changelog = {
   Changelog: {
     "1.9.0": {
-      releaseDate: "",
+      releaseDate: "September 12, 2026",
       features: [
         "Added support for upcoming Minecraft version 26.3.",
         "Removed more blocks from the 'Blocks Only' map type (glass, carpet, trapdoors, pressure plates, grates, workstations)."
