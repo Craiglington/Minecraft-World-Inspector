@@ -1,3 +1,4 @@
+import { AppConstants } from "../../../constants/app-constants";
 import { SNBT, SNBTValue } from "../../../models/snbt";
 
 interface Changelog extends SNBT {
@@ -18,11 +19,11 @@ export const ChangeLogData: Changelog = {
     "1.9.1": {
       releaseDate: "September 12, 2026",
       bugFixes: [
-        "Fixed a bug introduced in Inspect MC 1.9.0 where blocks with multiple states and corresponding map colors only displayed their default state and map color in Minecraft versions before 26.3."
+        `Fixed a bug introduced in ${AppConstants.appTitle} version 1.9.0 where blocks with multiple states and corresponding map colors only displayed their default state and map color in Minecraft versions before 26.3.`
       ]
     },
     "1.9.0": {
-      releaseDate: "September 12, 2026",
+      releaseDate: "September 11, 2026",
       features: [
         "Added support for upcoming Minecraft version 26.3.",
         "Removed more blocks from the 'Blocks Only' map type (glass, carpet, trapdoors, pressure plates, grates, workstations)."
