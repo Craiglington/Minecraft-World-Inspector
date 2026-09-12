@@ -345,8 +345,12 @@ export class AnvilService {
     }
     if (!blockColor) return MapIds.NONE;
     if (typeof blockColor === "number") return blockColor;
-    if (typeof paletteEntry === "string")
+    if (
+      typeof paletteEntry === "string" ||
+      paletteEntry["properties"] === undefined
+    ) {
       return blockColor[0]?.id ?? MapIds.NONE;
+    }
     for (const color of blockColor) {
       let match = true;
       for (const property in color.properties) {
